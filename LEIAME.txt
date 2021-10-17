@@ -1,0 +1,20 @@
+Trabalho da disciplina de Redes de Computadores da 
+Universidade Federal da Fronteira Sul (UFFS)
+
+Alunos: Murilo Xavier de Oliveira e Rodrigo Vogt
+
+*Os arquivos "enlaces.config" e "roteador.config" precisam estar no
+mesmo diretório dos códigos-fonte.
+
+*Para compilação foi usado:
+ - gcc funcs.h readFiles.c router.c -D_REENTRANT -lpthread -o m -Wall
+
+*Também pode ser usado o Makefile usando o comando 'make'
+
+*Para instanciar um roteador é preciso passar como argumento na linha de
+comandos o seu ID. Exemplo : ./m 1
+
+*Há um problema visual após um roteador encaminhar um pacote:
+O prompt fica esperando um id do scanf, sem a apresentação do
+printf anterior na thread de envioMsg. Contudo ao digitar um id válido,
+a thread segue sendo executada normalmente.
