@@ -852,7 +852,7 @@ int main(int argc, char *arq[]){
 
   pthread_create(&tids[0], NULL, (void *)server, NULL); //server que recebe os pacotes
   pthread_create(&tids[1], NULL, (void *)SendDV, NULL);
-  
+  pthread_create(&tids[2], NULL, (void *)enviarMsg, NULL);
   pthread_create(&tids[3], NULL, (void *)serverControl, NULL); //controle da fila e encaminhamentos dos pacotes
   
   pthread_join(tids[0], NULL);

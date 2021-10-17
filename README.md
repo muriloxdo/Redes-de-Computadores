@@ -35,6 +35,20 @@ passar como argumento na linha de comandos o seu ID. Exemplo :
 ```
 
 ## OBSERVAÇÃO ##
+*Como enviar mensagem? Digite um Id de um roteador. Exemplo: 
+
+```bash
+2
+```
+
+*Após isso ele irá imprimir "msg:" e então basta digitar a mensagem. Exemplo:
+
+```bash
+msg: Exemplo de mensagem
+```
+
+Apenas o roteador 1 está enviando mensagem, isso é um problema temporário.
+
 Há um problema visual após um roteador encaminhar um pacote:
 O prompt fica esperando um id do scanf, sem a apresentação do
 printf anterior na thread de envioMsg. Contudo ao digitar um id válido,

@@ -14,7 +14,16 @@ mesmo diretório dos códigos-fonte.
 *Para instanciar um roteador é preciso passar como argumento na linha de
 comandos o seu ID. Exemplo : ./m 1
 
+
+*Como enviar mensagem? Digite um Id de um roteador. Exemplo: 
+
+2
+
+*Após isso ele irá imprimir "msg:" e então basta digitar a mensagem.
+
 *Há um problema visual após um roteador encaminhar um pacote:
 O prompt fica esperando um id do scanf, sem a apresentação do
 printf anterior na thread de envioMsg. Contudo ao digitar um id válido,
 a thread segue sendo executada normalmente.
+
+*Apenas o roteador 1 está enviando mensagem, isso é um problema temporário.
